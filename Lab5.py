@@ -67,6 +67,7 @@ def constructBST(file_name):
         bst.insert(lines[i])
     return bst
 
+
 if (__name__ == "__main__"):
     name = "websites.txt"
     bst = constructBST(name)
