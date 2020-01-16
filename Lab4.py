@@ -307,5 +307,5 @@ if (__name__ == "__main__"):
     token_list = ['this', 'is', 'a', 'string', 'of', 'text', '.', 'which', 'needs', 'to', 'be', 'created', '.']
     print(gen_bot_text(token_list, False))
     text = ' '.join(parse_story('308.txt'))
-    write_story('test_write_story_student.txt', text, 'Three Men in a Boat', 'Jerome K. Jerome', 'Jerome K. Jerome', 1889)
     '''
+    
