@@ -289,34 +289,23 @@ def gen_bot_text(token_list, bad_author):
         output = output.join(good_list)
         return output
     
-def write_story(file_name, text, title, student_name, author, year):
-    '''
-    (str, str, str, str, str, int) -> story
-    
-    Turns the text into a chapter book.
-    
-    >>> write_story('test_write_story_student.txt', text, 'Three Men in a Boat', 'Jerome K. Jerome', 'Jerome K. Jerome', 1889)
-    '''
-    
-    story = open(file_name, 'w')
-    story.write("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + title + ": " + str(year) + " " + "UNLEASHED" + "\n" + author + ", inspired by " + author + "\n" + "Copyright year published (" + str(year) + "), publisher: EngSci press" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n")
-    story.close()
-    
 
 
 
 if (__name__ == "__main__"):
+    '''
     test_file = open('test_text_parsing.txt')
     print(parse_story(test_file))
-    #print(get_prob_from_count([25, 60, 5, 10]))
-    #print(build_ngram_counts(["the", "child", "will", "go", "out", "to", "play", ",", "and", "the", "child", "can", "not", "be", "sad", "anymore", "."], 2))
-    #ngram_counts = {('i', 'love'): [['js', 'py3', 'c', 'no'], [20, 20, 10, 2]], ('u', 'r'): [['cool', 'nice', 'lit', 'kind'], [8, 7, 5, 5]], ('toronto', 'is'): [['six', 'drake'], [2, 3]]}
-    #print(prune_ngram_counts(ngram_counts, 3))
-    #print(probify_ngram_counts(ngram_counts))
-    #words = ["the", "child", "will", "the", "child", "can", "the", "child", "will", "the", "child", "may", "go", "home", "."]
-    #tester = build_ngram_model(words, 2)
-    #print(gen_bot_list(tester, ('the', 'child'), 5))
-    #token_list = ['this', 'is', 'a', 'string', 'of', 'text', '.', 'which', 'needs', 'to', 'be', 'created', '.']
-    #print(gen_bot_text(token_list, False))
-    #text = ' '.join(parse_story('308.txt'))
-    #write_story('test_write_story_student.txt', text, 'Three Men in a Boat', 'Jerome K. Jerome', 'Jerome K. Jerome', 1889)
+    print(get_prob_from_count([25, 60, 5, 10]))
+    print(build_ngram_counts(["the", "child", "will", "go", "out", "to", "play", ",", "and", "the", "child", "can", "not", "be", "sad", "anymore", "."], 2))
+    ngram_counts = {('i', 'love'): [['js', 'py3', 'c', 'no'], [20, 20, 10, 2]], ('u', 'r'): [['cool', 'nice', 'lit', 'kind'], [8, 7, 5, 5]], ('toronto', 'is'): [['six', 'drake'], [2, 3]]}
+    print(prune_ngram_counts(ngram_counts, 3))
+    print(probify_ngram_counts(ngram_counts))
+    words = ["the", "child", "will", "the", "child", "can", "the", "child", "will", "the", "child", "may", "go", "home", "."]
+    tester = build_ngram_model(words, 2)
+    print(gen_bot_list(tester, ('the', 'child'), 5))
+    token_list = ['this', 'is', 'a', 'string', 'of', 'text', '.', 'which', 'needs', 'to', 'be', 'created', '.']
+    print(gen_bot_text(token_list, False))
+    text = ' '.join(parse_story('308.txt'))
+    write_story('test_write_story_student.txt', text, 'Three Men in a Boat', 'Jerome K. Jerome', 'Jerome K. Jerome', 1889)
+    '''
