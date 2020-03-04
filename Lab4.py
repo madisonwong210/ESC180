@@ -289,7 +289,7 @@ def gen_bot_text(token_list, bad_author):
         output = output.join(good_list)
         return output
     
-
+    
 
 
 if (__name__ == "__main__"):
